@@ -1,4 +1,4 @@
-class GeneratorIsOver(Exception):
+class FileGeneratorIsOver(Exception):
     def __init__(self, generator):
         self.generator = generator
 
