@@ -31,7 +31,7 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def get_lines(path_to_file: Path) -> Generator[str]:
+def get_lines(path_to_file: Path) -> Generator:
     '''
     A generator that opens a file and returns it line by line
     :param path_to_file: the path to the file to be opened and read
