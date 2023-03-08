@@ -37,7 +37,7 @@ def get_lines(path_to_file: Path) -> Generator[str]:
     :param path_to_file: the path to the file to be opened and read
     :return: str
     '''
-    with open(path_to_file, 'r', encoding='utf8') as log_file:
+    with open(path_to_file, 'r', encoding='utf-8') as log_file:
         for line in log_file:
             yield line
 
@@ -80,7 +80,7 @@ def merge_file(file_gen1: Generator,
     :param path_to_output_file: The resulting file
     :return: None
     '''
-    with open(path_to_output_file, 'a', encoding='utf8') as out:
+    with open(path_to_output_file, 'a', encoding='utf-8') as out:
 
         try:
             log_string1, log_time1 = get_log_time(file_gen1)
